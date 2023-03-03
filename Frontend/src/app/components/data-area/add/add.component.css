@@ -1,0 +1,20 @@
+form {
+  color: aliceblue;
+  background-color: black;
+  width: 300px;
+  text-align: left;
+  align-items: left;
+  margin: auto;
+  border: 3px solid rgb(115, 183, 188);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px 0 rgb(0, 0, 0);
+}
+
+select,
+input,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}

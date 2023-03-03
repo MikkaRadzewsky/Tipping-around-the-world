@@ -1,0 +1,18 @@
+table {
+    color: aliceblue;
+    margin: 20px auto;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.208);
+    transition: 0.3s;
+    width: 80%;
+    text-align: center;
+    padding: 15px 20px;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+table,th,td,ng-template {
+    border-radius: 20px;
+    border-collapse: collapse;
+    padding: 5px;
+}

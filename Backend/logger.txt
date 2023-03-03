@@ -1,0 +1,12 @@
+2/21/2023, 3:32:36 PM 	 ICountryModel validation failed: whoGets: Must enter who gets the tip
+----------------------------
+3/3/2023, 1:27:24 PM 	 Route /api/countries-by-continent/ not exist
+----------------------------
+3/3/2023, 1:30:52 PM 	 Cast to ObjectId failed for value "null" (type string) at path "continentId" for model "ICountryModel"
+----------------------------
+3/3/2023, 1:31:15 PM 	 Cast to ObjectId failed for value "null" (type string) at path "continentId" for model "ICountryModel"
+----------------------------
+3/3/2023, 1:31:23 PM 	 Cast to ObjectId failed for value "null" (type string) at path "continentId" for model "ICountryModel"
+----------------------------
+3/3/2023, 1:33:42 PM 	 Cast to ObjectId failed for value "null" (type string) at path "continentId" for model "ICountryModel"
+----------------------------

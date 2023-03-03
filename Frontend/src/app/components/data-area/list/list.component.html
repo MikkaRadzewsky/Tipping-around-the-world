@@ -1,0 +1,33 @@
+<div>
+  <select (change)="displayCountries($event)">
+    <option selected disabled value="">Select Continent</option>
+    <option *ngFor="let et of continents" value="{{ et._id }}">
+      {{ et.name }}
+    </option>
+    <option value="0">All</option>
+  </select>
+
+  <table *ngIf="countries?.length">
+    <thead>
+      <tr>
+        <th>Country:</th>
+        <th>Included:</th>
+        <th>Expected:y</th>
+        <th>Tip Amount:</th>
+        <th>Who Gets It:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of countries">
+        <td>{{ c.name }}</td>
+        <td>{{ c.included }}</td>
+        <td>{{ c.expected }}</td>
+        <td>{{ c.amount }}</td>
+        <td>{{ c.whoGets }}</td>
+        <!-- <td>
+                  <button (click)="deleteMe(e._id)">X</button>
+              </td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>

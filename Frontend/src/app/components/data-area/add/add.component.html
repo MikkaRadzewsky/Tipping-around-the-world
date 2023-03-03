@@ -1,0 +1,54 @@
+<form (ngSubmit)="send()" ngNativeValidate>
+  <label for="">Continent:</label>
+  <select name="continentId" [(ngModel)]="country.continentId" required>
+    <option selected disabled value="">Select Theater</option>
+    <option *ngFor="let c of continents" value="{{ c._id }}">
+      {{ c.name }}
+    </option>
+  </select>
+
+  <label for="">Name:</label>
+  <input type="text" name="name" [(ngModel)]="country.name" required />
+
+  <label for="">Included:</label>
+  <input
+    type="text"
+    name="included"
+    [(ngModel)]="country.included"
+    required
+    minlength="2"
+    maxlength="100"
+  />
+
+  <label for="">Expected:</label>
+  <input
+    type="text"
+    name="expected"
+    [(ngModel)]="country.expected"
+    required
+    minlength="2"
+    maxlength="100"
+  />
+
+  <label for="">Tip Amount:</label>
+  <input
+    type="text"
+    name="amount"
+    [(ngModel)]="country.amount"
+    required
+    minlength="2"
+    maxlength="100"
+  />
+
+  <label for="">Who Gets the Tip:</label>
+  <input
+    type="text"
+    name="whoGets"
+    [(ngModel)]="country.whoGets"
+    required
+    minlength="2"
+    maxlength="100"
+  />
+
+  <button>Add</button>
+</form>
